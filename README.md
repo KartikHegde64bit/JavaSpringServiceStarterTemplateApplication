@@ -64,17 +64,27 @@ mvn test
 - Used simple Java classes for request/response models to keep the code straightforward.
 - Added Bean Validation for basic request correctness.
 
+### Project structure / separation of concerns
+- `controller` handles the API endpoints.
+- `service` keeps the main processing logic separate from HTTP code.
+- `model.request` and `model.response` keep request and response data clear and simple.
+- There is no `entity` folder yet because this project does not use a database right now.
+- There is no separate `dto` folder because the request and response classes already play that role in this small project.
+- This keeps the code easier to read, test, and extend.
+
 ## Assumptions
 - `GET /health` only needs to report a simple status payload.
 - `POST /example` does not need persistence or external integrations.
 - Spring Boot's default error handling is sufficient.
+- To keep the scope small and within time, I did not add authentication, database support, or advanced production features yet.
 
 ## Future Roadmap
 Further, we are planning to 
 - add authentication, 
 - a basic DB connection,
-- global exception handling.
+- global exception handling,
+- add logging and metrics for better monitoring,
+- add CI checks so build and tests run automatically.
 
 ## NOTE
 - DB Connection and Authentication is entirely missing from this!
-
