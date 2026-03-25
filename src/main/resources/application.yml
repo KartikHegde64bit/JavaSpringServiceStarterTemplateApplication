@@ -1,0 +1,12 @@
+# ══════════════════════════════════════════════════════════════
+#  Starter Service – Application Config
+#  All tuneable values can be overridden at runtime:
+#    • Env variables  (e.g. SERVER_PORT=9090)
+#    • JVM system props  (e.g. -Dserver.port=9090)
+# ══════════════════════════════════════════════════════════════
+
+spring:
+  application:
+    name: starter-service
+server:
+  port: 8080
