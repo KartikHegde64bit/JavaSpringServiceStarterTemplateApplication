@@ -69,6 +69,12 @@ mvn test
 - `POST /example` does not need persistence or external integrations.
 - Spring Boot's default error handling is sufficient.
 
+## Future Roadmap
+Further, we are planning to 
+- add authentication, 
+- a basic DB connection,
+- global exception handling.
 
 ## NOTE
-- DB Connection and Authentication is entirely missing from this! 
+- DB Connection and Authentication is entirely missing from this!
+
